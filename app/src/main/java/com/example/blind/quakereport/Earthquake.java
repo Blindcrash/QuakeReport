@@ -1,21 +1,23 @@
 package com.example.blind.quakereport;
 
+import android.support.v4.content.ContextCompat;
+
 public class Earthquake {
 
-    private String mMagnitude;
+    private Double mMagnitude;
 
     private String mLocation;
 
     private Long mTimeInMilliseconds;
 
-    public Earthquake(String magnitude, String location, Long timeInMiliseconds){
+    public Earthquake(Double magnitude, String location, Long timeInMiliseconds){
 
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = timeInMiliseconds;
     }
 
-    public String getMagnitude() {
+    public Double getMagnitude() {
         return mMagnitude;
     }
 
@@ -26,4 +28,5 @@ public class Earthquake {
     public Long getTimeInMilliseconds () {
         return mTimeInMilliseconds;
     }
+
 }
