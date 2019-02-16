@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+ 
 public class EarthquakeActivity extends AppCompatActivity implements LoaderCallbacks<List<Earthquake>> {
 
     private static final String USGS_REQUEST_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=6&limit=10";
